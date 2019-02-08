@@ -31,8 +31,4 @@ class TestCream < Minitest::Test
 
     assert_equal(new_value, cache.get(:test))
   end
-
-  def test_expires_at_resets_after_reset
-    # TODO
-  end
 end
