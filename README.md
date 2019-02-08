@@ -9,7 +9,7 @@ Simple in-memory Ruby cache. Inspired by [go-cache](https://github.com/patrickmn
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "cream"
+gem "ruby_cream"
 ```
 
 And then execute:

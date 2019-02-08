@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "cream/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "cream"
+  spec.name          = "ruby_cream"
   spec.version       = Cream::VERSION
   spec.authors       = ["Jonathan Thom"]
   spec.email         = ["jonathan.thom1990@gmail.com"]
@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org/"
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/JonathanWThom/cream"
+    spec.metadata["source_code_uri"] = spec.homepage
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "bundler", "~> 1.17.3"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.11.3"
 end
